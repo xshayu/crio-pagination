@@ -47,7 +47,7 @@ function App() {
         </thead>
         <tbody>
           {
-            data.slice(((page - 1)*10), page * 10).map((employee, key) =>
+            data.slice(((page - 1)*LIMIT), page * LIMIT).map((employee, key) =>
               <tr key={key}>
                 <th scope="row">{employee.id}</th>
                 <td>{employee.name}</td>
